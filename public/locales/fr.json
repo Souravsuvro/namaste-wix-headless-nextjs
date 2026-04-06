@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Notre Carte",
+    "order": "Commander",
+    "reservations": "Réservations",
+    "bar": "Bar & Cocktails",
+    "gallery": "Galerie",
+    "about": "Notre Histoire",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Namaste GIEN",
+    "subtitle": "Where Spice Meets the Loire",
+    "cta_menu": "Découvrir la Carte",
+    "cta_reserve": "Réserver une Table"
+  },
+  "home": {
+    "featured_title": "Nos Plats Signatures",
+    "featured_subtitle": "Une fusion unique de saveurs indiennes et de l'élégance française",
+    "about_title": "Notre Histoire",
+    "about_text": "Au cœur de Gien, sur les rives de la Loire, Namaste GIEN célèbre la rencontre entre les épices ancestrales de l'Inde et le raffinement de la cuisine française.",
+    "about_cta": "En savoir plus",
+    "testimonials_title": "Ce que disent nos hôtes",
+    "newsletter_title": "Restez Connecté",
+    "newsletter_subtitle": "Recevez nos offres exclusives et les nouveautés de la carte",
+    "newsletter_placeholder": "Votre adresse email",
+    "newsletter_button": "S'inscrire"
+  },
+  "menu": {
+    "title": "Notre Carte",
+    "subtitle": "Des saveurs authentiques, une présentation raffinée",
+    "filter_all": "Tous",
+    "filter_vegetarian": "Végétarien",
+    "filter_vegan": "Végan",
+    "filter_gluten_free": "Sans Gluten",
+    "filter_spicy": "Épicé",
+    "add_to_cart": "Ajouter au panier",
+    "categories": {
+      "entrees": "Entrées",
+      "plats": "Plats Principaux",
+      "tandoori": "Tandoori & Grillades",
+      "biryani": "Biryani & Riz",
+      "desserts": "Desserts",
+      "cocktails": "Bar & Cocktails"
+    }
+  },
+  "order": {
+    "title": "Commander en Ligne",
+    "subtitle": "Livraison ou à emporter",
+    "cart_title": "Votre Panier",
+    "cart_empty": "Votre panier est vide",
+    "delivery": "Livraison",
+    "pickup": "À emporter",
+    "delivery_address": "Adresse de livraison",
+    "delivery_zone_info": "Livraison gratuite dans un rayon de 5km. Supplément de 3€ au-delà.",
+    "subtotal": "Sous-total",
+    "delivery_fee": "Frais de livraison",
+    "total": "Total",
+    "checkout": "Passer la commande",
+    "confirmation": {
+      "title": "Commande Confirmée !",
+      "message": "Merci pour votre commande. Vous recevrez une confirmation par email.",
+      "order_number": "Numéro de commande",
+      "back_home": "Retour à l'accueil"
+    }
+  },
+  "reservations": {
+    "title": "Réserver une Table",
+    "subtitle": "Vivez une expérience culinaire unique",
+    "date_label": "Date",
+    "time_label": "Heure",
+    "party_size": "Nombre de convives",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "special_requests": "Demandes spéciales",
+    "submit": "Confirmer la réservation",
+    "confirmation": {
+      "title": "Réservation Confirmée !",
+      "message": "Votre table est réservée. Un email de confirmation vous a été envoyé.",
+      "back_home": "Retour à l'accueil"
+    }
+  },
+  "bar": {
+    "title": "Bar & Cocktails",
+    "subtitle": "Des cocktails signature inspirés par l'Inde et la Loire"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Découvrez l'ambiance Namaste GIEN"
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "subtitle": "La rencontre de deux cultures culinaires",
+    "heritage_title": "Un Héritage Fusion",
+    "heritage_text": "Fondé en 2023, Namaste GIEN est né de la passion de réunir les traditions culinaires millénaires de l'Inde avec l'excellence gastronomique de la vallée de la Loire. Chaque plat raconte une histoire de voyage, d'épices et de savoir-faire.",
+    "philosophy_title": "Notre Philosophie",
+    "philosophy_text": "Nous sélectionnons des ingrédients locaux et des épices importées directement d'Inde pour créer une cuisine de fusion authentique. Nos produits fermiers viennent des producteurs de la région, et nos épices sont moulues fraîchement chaque jour.",
+    "team_title": "Notre Équipe",
+    "team_text": "Notre chef combine vingt ans d'expérience en cuisine indienne avec une formation dans les plus grandes maisons françaises."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis de vous accueillir",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Horaires",
+    "hours_detail": "Mar-Dim : 12h-14h30, 19h-22h30 | Fermé le Lundi",
+    "form_name": "Votre nom",
+    "form_email": "Votre email",
+    "form_message": "Votre message",
+    "form_submit": "Envoyer"
+  },
+  "footer": {
+    "tagline": "Where Spice Meets the Loire",
+    "hours_title": "Horaires d'ouverture",
+    "hours_detail": "Mar-Dim : 12h-14h30, 19h-22h30",
+    "closed": "Fermé le Lundi",
+    "contact_title": "Contact",
+    "newsletter_title": "Newsletter",
+    "copyright": "© 2026 Namaste GIEN. Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  },
+  "cookie": {
+    "message": "Ce site utilise des cookies pour améliorer votre expérience.",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "back": "Retour",
+    "view_all": "Voir tout",
+    "from": "À partir de"
+  }
+}

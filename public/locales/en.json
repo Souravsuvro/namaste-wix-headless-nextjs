@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Our Menu",
+    "order": "Order Online",
+    "reservations": "Reservations",
+    "bar": "Bar & Cocktails",
+    "gallery": "Gallery",
+    "about": "Our Story",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Namaste GIEN",
+    "subtitle": "Where Spice Meets the Loire",
+    "cta_menu": "Explore the Menu",
+    "cta_reserve": "Book a Table"
+  },
+  "home": {
+    "featured_title": "Signature Dishes",
+    "featured_subtitle": "A unique fusion of Indian flavors and French elegance",
+    "about_title": "Our Story",
+    "about_text": "In the heart of Gien, on the banks of the Loire, Namaste GIEN celebrates the meeting of ancestral Indian spices and the refinement of French cuisine.",
+    "about_cta": "Learn more",
+    "testimonials_title": "What Our Guests Say",
+    "newsletter_title": "Stay Connected",
+    "newsletter_subtitle": "Receive our exclusive offers and menu updates",
+    "newsletter_placeholder": "Your email address",
+    "newsletter_button": "Subscribe"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Authentic flavors, refined presentation",
+    "filter_all": "All",
+    "filter_vegetarian": "Vegetarian",
+    "filter_vegan": "Vegan",
+    "filter_gluten_free": "Gluten Free",
+    "filter_spicy": "Spicy",
+    "add_to_cart": "Add to Cart",
+    "categories": {
+      "entrees": "Starters",
+      "plats": "Main Courses",
+      "tandoori": "Tandoori & Grills",
+      "biryani": "Biryani & Rice",
+      "desserts": "Desserts",
+      "cocktails": "Bar & Cocktails"
+    }
+  },
+  "order": {
+    "title": "Order Online",
+    "subtitle": "Delivery or takeaway",
+    "cart_title": "Your Cart",
+    "cart_empty": "Your cart is empty",
+    "delivery": "Delivery",
+    "pickup": "Takeaway",
+    "delivery_address": "Delivery address",
+    "delivery_zone_info": "Free delivery within 5km. €3 surcharge beyond.",
+    "subtotal": "Subtotal",
+    "delivery_fee": "Delivery fee",
+    "total": "Total",
+    "checkout": "Place Order",
+    "confirmation": {
+      "title": "Order Confirmed!",
+      "message": "Thank you for your order. You will receive a confirmation email.",
+      "order_number": "Order number",
+      "back_home": "Back to Home"
+    }
+  },
+  "reservations": {
+    "title": "Book a Table",
+    "subtitle": "Experience a unique culinary journey",
+    "date_label": "Date",
+    "time_label": "Time",
+    "party_size": "Party Size",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "special_requests": "Special Requests",
+    "submit": "Confirm Reservation",
+    "confirmation": {
+      "title": "Reservation Confirmed!",
+      "message": "Your table is booked. A confirmation email has been sent.",
+      "back_home": "Back to Home"
+    }
+  },
+  "bar": {
+    "title": "Bar & Cocktails",
+    "subtitle": "Signature cocktails inspired by India and the Loire"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover the Namaste GIEN atmosphere"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "Where two culinary cultures meet",
+    "heritage_title": "A Fusion Heritage",
+    "heritage_text": "Founded in 2023, Namaste GIEN was born from the passion of uniting India's millennial culinary traditions with the Loire Valley's gastronomic excellence. Each dish tells a story of travel, spices, and craftsmanship.",
+    "philosophy_title": "Our Philosophy",
+    "philosophy_text": "We select local ingredients and spices imported directly from India to create authentic fusion cuisine. Our farm products come from regional producers, and our spices are freshly ground every day.",
+    "team_title": "Our Team",
+    "team_text": "Our chef combines twenty years of Indian cuisine experience with training at France's finest establishments."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We would love to welcome you",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hours_detail": "Tue-Sun: 12pm-2:30pm, 7pm-10:30pm | Closed Monday",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_message": "Your message",
+    "form_submit": "Send"
+  },
+  "footer": {
+    "tagline": "Where Spice Meets the Loire",
+    "hours_title": "Opening Hours",
+    "hours_detail": "Tue-Sun: 12pm-2:30pm, 7pm-10:30pm",
+    "closed": "Closed Monday",
+    "contact_title": "Contact",
+    "newsletter_title": "Newsletter",
+    "copyright": "© 2026 Namaste GIEN. All rights reserved.",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy"
+  },
+  "cookie": {
+    "message": "This site uses cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "view_all": "View all",
+    "from": "From"
+  }
+}
