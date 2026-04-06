@@ -1,17 +1,16 @@
 import { getWixClient } from "./wix-client";
 
-const client = getWixClient();
-
 export async function getCollectionItems(
   collectionId: string,
   limit: number = 50
 ) {
   try {
-    const { items } = await client.items
+    const client = getWixClient();
+    const { items: dataItems } = await client.items
       .queryDataItems({ dataCollectionId: collectionId })
       .limit(limit)
       .find();
-    return items.map((item) => item.data);
+    return dataItems.map((item: { data: Record<string, unknown> }) => item.data);
   } catch (error) {
     console.error("Error fetching CMS items:", error);
     return [];
@@ -28,8 +27,4 @@ export async function getGalleryImages() {
 
 export async function getFAQs() {
   return getCollectionItems("FAQ");
-}
-
-export async function getTeamMembers() {
-  return getCollectionItems("Team");
 }

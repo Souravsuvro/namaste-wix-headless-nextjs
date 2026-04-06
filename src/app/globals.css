@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-saffron: #E8731A;
+  --color-saffron-light: #F09A52;
+  --color-saffron-dark: #C65E0F;
+  --color-indigo: #1B3A6B;
+  --color-indigo-light: #2B5AA0;
+  --color-indigo-dark: #0F1F3D;
+  --color-gold: #D4A843;
+  --color-tandoori: #C23B22;
+  --color-cream: #FDF6EC;
+  --color-sand: #F5EDE0;
+  --color-charcoal: #2D2926;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-accent: "Cormorant Garamond", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-saffron);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-saffron-dark);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-saffron);
+  color: white;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid var(--color-saffron);
+  outline-offset: 2px;
+}
+
+/* Gold decorative divider */
+.divider-gold {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 0 auto;
+}
+
+/* Animate fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Section padding utility */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
 }

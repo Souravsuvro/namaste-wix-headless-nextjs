@@ -1,23 +1,19 @@
 import { getWixClient } from "./wix-client";
 
-const client = getWixClient();
-
 export async function getAvailability(
   serviceId: string,
   startDate: string,
   endDate: string
 ) {
   try {
-    const response =
-      await client.availabilityCalendar.queryAvailability(
-        {
-          filter: {
-            serviceId: [serviceId],
-            startDate,
-            endDate,
-          },
-        }
-      );
+    const client = getWixClient();
+    const response = await client.availabilityCalendar.queryAvailability({
+      filter: {
+        serviceId: [serviceId],
+        startDate,
+        endDate,
+      },
+    });
     return response.availabilityEntries || [];
   } catch (error) {
     console.error("Error fetching availability:", error);
@@ -39,9 +35,9 @@ export async function createBooking(bookingData: {
     phone?: string;
   };
   numberOfParticipants: number;
-  additionalFields?: Record<string, string>;
 }) {
   try {
+    const client = getWixClient();
     const booking = await client.bookings.createBooking({
       bookedEntity: {
         slot: {
@@ -63,15 +59,5 @@ export async function createBooking(bookingData: {
   } catch (error) {
     console.error("Error creating booking:", error);
     return null;
-  }
-}
-
-export async function getBookingServices() {
-  try {
-    const { items } = await client.bookings.queryServices().find();
-    return items;
-  } catch (error) {
-    console.error("Error fetching booking services:", error);
-    return [];
   }
 }

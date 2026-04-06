@@ -1,15 +1,17 @@
 import { createClient, OAuthStrategy } from "@wix/sdk";
-import { products, cart, checkout, orders } from "@wix/ecom";
+import { currentCart } from "@wix/ecom";
 import { availabilityCalendar, bookings } from "@wix/bookings";
 import { items } from "@wix/data";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let wixClientInstance: any = null;
+
 export function getWixClient() {
-  return createClient({
+  if (wixClientInstance) return wixClientInstance;
+
+  wixClientInstance = createClient({
     modules: {
-      products,
-      cart,
-      checkout,
-      orders,
+      currentCart,
       availabilityCalendar,
       bookings,
       items,
@@ -18,6 +20,8 @@ export function getWixClient() {
       clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID || "",
     }),
   });
+
+  return wixClientInstance;
 }
 
 export type WixClient = ReturnType<typeof getWixClient>;

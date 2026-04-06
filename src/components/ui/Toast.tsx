@@ -46,7 +46,7 @@ const TOAST_DURATION_MS = 5000;
 
 const typeConfig: Record<
   ToastType,
-  { bg: string; icon: JSX.Element; label: string }
+  { bg: string; icon: React.ReactNode; label: string }
 > = {
   success: {
     bg: "bg-green-50 border-green-400 text-green-800",
