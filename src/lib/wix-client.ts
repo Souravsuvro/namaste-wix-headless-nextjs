@@ -1,27 +1,31 @@
+/**
+ * Namaste Gien — Wix SDK Client Initialization
+ * Uses OAuthStrategy for public/headless access.
+ * WIX_CLIENT_ID must be set in .env.local
+ */
 import { createClient, OAuthStrategy } from "@wix/sdk";
-import { currentCart } from "@wix/ecom";
-import { availabilityCalendar, bookings } from "@wix/bookings";
-import { items } from "@wix/data";
+import { products, collections } from "@wix/stores";
+import { bookings } from "@wix/bookings";
+import { orders } from "@wix/ecom";
+import { members } from "@wix/members";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let wixClientInstance: any = null;
-
-export function getWixClient() {
-  if (wixClientInstance) return wixClientInstance;
-
-  wixClientInstance = createClient({
-    modules: {
-      currentCart,
-      availabilityCalendar,
-      bookings,
-      items,
-    },
-    auth: OAuthStrategy({
-      clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID || "",
-    }),
-  });
-
-  return wixClientInstance;
+if (!process.env.WIX_CLIENT_ID) {
+  throw new Error(
+    "WIX_CLIENT_ID is not set. Please add it to your .env.local file."
+  );
 }
 
-export type WixClient = ReturnType<typeof getWixClient>;
+export const wixClient = createClient({
+  modules: {
+    products,
+    collections,
+    bookings,
+    orders,
+    members,
+  },
+  auth: OAuthStrategy({
+    clientId: process.env.WIX_CLIENT_ID,
+  }),
+});
+
+export type WixClient = typeof wixClient;
